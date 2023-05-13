@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 col-sm-4 mt-4" id="nombre">
+      <div class="row">
+        <label for="inputnombre" class="visually">Name</label>
+        <input type="text" class="form-control mt-3" id="inputnombre" placeholder="Nombre" name="nombre" [(ngModel)]="nombre">
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mt-3" (click)="add()">Add</button>
+      </div>
+    </div>
+  
+    <div class="col-6 mt-4 mb-3 offset-md-2" id="tipo">
+      <p>Type of programing</p>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Seleccionar</option>
+        <option value="Programación declarativa">Declarativa</option>
+        <option value="Programación imperativa">Imperativa</option>
+        <option value="Programación estructurada">Estructurada</option>
+        <option value="Programación modular">Modular</option>
+        <option value="Programación orientada a objetos">Orientada a objetos</option>
+        <option value="Programación orientada a eventos">Orientada a eventos</option>
+
+      </select>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-6 mt-4" id="plataforma">
+      <p>Plataform</p>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios1">
+          Web
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+          Movil
+        </label>
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+        <label class="form-check-label" for="exampleRadios3">
+          Escritorio
+        </label>
+      </div>
+    </div>
+
+    <div class="custom-file mt-4 col-6" id="file">
+      <p>Plataform</p>
+      <input type="file" class="custom-file-input" id="customFileLang" lang="es">
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col order.first mt-4" id="">
+      <p>Coment</p>
+      <textarea class="form-control mt-4" rows="3"></textarea>
+    </div>
+  </div>
+</div>

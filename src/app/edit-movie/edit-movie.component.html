@@ -1,0 +1,29 @@
+<div class="container p-5">
+    <h1 class="fw-light">Editar película</h1>
+
+    <form>
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="mb-3">
+                    <label class="form-label">Nombre de la película</label>
+                    <input type="text" class="form-control" [(ngModel)]="name" name="name">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="mb-3">
+                    <label class="form-label">Descrición de la película</label>
+                    <textarea class="form-control" rows="3" [(ngModel)]="description" name="description"></textarea>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-12 text-end">
+                <button type="submit" class="btn btn-primary" (click)="update()">Actualizar</button>
+            </div>
+        </div>
+    </form>    
+</div>

@@ -1,0 +1,30 @@
+<div class="container text-center py-5">
+ <div class="row">
+    <div class="col-12">
+        <h1 class="fw-light">AQUÍ ENCUENTRA LAS MEJORES PELÍCULAS</h1>
+        <p class="lead text-muted">ESTRENOS - CLÁSICOS - COMEDIA - TERROR</p>
+        <a class="btn btn-info" routerLink="/movies">VER TODAS LAS PELÍCULAS</a>
+    </div>
+ </div>
+</div>
+
+<div class="bg-light p-5">
+
+    <h1>últimas películas</h1>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-4 mt-3" *ngFor="let movie of movies">
+            <div class="card">
+                <div class="text-center">
+                    <img src="{{ movie.image }}" width="200">
+                </div>
+                
+                <div class="card-body">
+                    <h2>{{ movie.name }}</h2>
+                    <p>{{ movie.description }}</p>
+                    <a class="btn btn-success">Ver</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>

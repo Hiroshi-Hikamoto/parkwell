@@ -1,0 +1,22 @@
+<div class="container-fluid">
+
+    <div class="card">
+        <h1>Detalle coctel</h1>
+
+        <img [src]="cocktail?.strDrinkThumb" width="100">
+
+        <h2>{{ cocktail?.strDrink }}</h2>
+
+        <p>
+            {{ cocktail?.strInstructions }}
+        </p>
+
+        <p><strong>Categoría:</strong> {{ cocktail?.strCategory }}</p>
+
+        <span class="badge bg-primary">{{ cocktail?.strIngredient1 }}</span>
+        <span class="badge bg-primary ms-1">{{ cocktail?.strIngredient2 }}</span>
+        <span class="badge bg-primary ms-1">{{ cocktail?.strIngredient3 }}</span>
+        <span class="badge bg-primary ms-1">{{ cocktail?.strIngredient4 }}</span>
+    </div>
+
+</div>
